@@ -15,31 +15,33 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  `    |  1   |  2  |  3  |  4  |  5   |   |  6  |  7   |  8  |  9  |  0  | BKSP
-// | TAB   |  Q   |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |  \   |
+// | TAB   |  Q   |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |  =   |
 // | CAPS  |  A   |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT  |  Z   |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-// | ESC   | CTRL | OPT | GUI | LWR | ENTR |   | SPC | LWR  | ALT | SPC | SPC | ENTR |
+// | ESC   | CTRL | OPT | GUI | LWR | ENTR |   | SPC | LWR  | ALT | SPC | SPC | \    |
                         bindings = <
    &kp GRAVE &kp N1    &kp N2   &kp N3   &kp N4 &kp N5       &kp N6    &kp N7 &kp N8    &kp N9    &kp N0    &kp BSPC                     
-   &kp TAB   &kp Q     &kp W    &kp E    &kp R  &kp T        &kp Y     &kp U  &kp I     &kp O     &kp P     &kp BSLH
+   &kp TAB   &kp Q     &kp W    &kp E    &kp R  &kp T        &kp Y     &kp U  &kp I     &kp O     &kp P     &kp EQUAL
    &kp CAPS  &kp A     &kp S    &kp D    &kp F  &kp G        &kp H     &kp J  &kp K     &kp L     &kp SEMI  &kp SQT
    &kp LSHFT &kp Z     &kp X    &kp C    &kp V  &kp B        &kp N     &kp M  &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-   &kp ESC   &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp ENTER    &kp SPACE &mo 1  &kp RALT  &kp SPACE &kp SPACE &kp ENTER
+   &kp ESC   &kp LCTRL &kp LALT &kp LGUI &mo 1  &kp ENTER    &kp SPACE &mo 1  &kp RALT  &kp SPACE &kp SPACE &kp BSLH
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | BTCLR| BT0 | BT1 | BT2 | BT3 | BT4 |   |     |     |     |     |      |      |
-// | SHFT |     | UP  |     |     |     |   |     |     |     |     | LBKT | RBKT |
-// |      | LFT | DWN | RGT |     |     |   |     |     |     |     | LBRC | RBRC |
-// |      |     |     |     |     |     |   |     |     |     |     |      |      |
-// |      |     |     |     |     |     |   |     |     |     |     |      |      |
+// |       | F1   |  F2  |  F3  |  F4 |  F5 |   |  F6 |  F7 |  F8  | F9   | F10  |      |
+// |       |      |      |      |  UP |     |   |     |     | LBKT | RBKT |      |      |
+// |       |      |      | LFT  | DWN | RGT |   |     |  -  | LBRC | RBRC |      |      |
+// |       |      |      |      |     |     |   |     |     |      |      |      |      |
+// | BTCLR | BT0  | BT1  | BT2  | BT3 | BT4 |   |     |     |      |      |      |      |
+
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans &trans &trans &trans &trans   &trans
-   &trans     &trans       &kp UP       &trans       &trans       &trans           &trans &trans &trans &trans &kp LBKT &kp RBKT
-   &trans     &kp LEFT     &kp DOWN     &kp RIGHT    &trans       &trans           &trans &trans &trans &trans &kp LBRC &kp RBRC
-   &trans     &trans       &trans       &trans       &trans       &trans           &trans &trans &trans &trans &trans   &trans
-   &trans     &trans       &trans       &trans       &trans       &trans           &trans &trans &trans &trans &trans   &trans
+   &trans     &kp F1       &kp F2       &kp f3       &kp F4       &kp F5           &kp F6 &kp F7    &kp F8   &kp F9   &kp F10 &trans  
+   &trans     &trans       &trans       &kp UP       &trans       &trans           &trans &trans    &kp LBKT &kp RBKT &trans  &trans
+   &trans     &trans       &kp LEFT     &kp DOWN     &kp RIGHT    &trans           &trans &kp MINUS &kp LBRC &kp RBRC &trans  &trans
+   &trans     &trans       &trans       &trans       &trans       &trans           &trans &trans    &trans   &trans   &trans  &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans &trans    &trans   &trans   &trans  &trans
+   
                         >;
                 };
 

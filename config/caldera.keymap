@@ -13,13 +13,6 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  ESC  |  1   |  2  |  3  |  4  |  5   |   |  6  |  7   |  8  |  9  |  0  | BKSP
-            // | TAB   |  Q   |  W  |  E  |  R  |  T   |   |  Y  |  U   |  I  |  O  |  P  |  =   |
-            // | `     |  A   |  S  |  D  |  F  |  G   |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT  |  Z   |  X  |  C  |  V  |  B   |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
-            // | CTRL  | GUI  | OPT |     | ENTR| SPC  |   |BKSP | L1M  | L1T | L2T |  \  | DEL  |
-
             bindings = <
 &kp ESCAPE  &kp N1        &kp N2    &kp N3  &kp N4     &kp N5       &kp N6         &kp N7  &kp N8     &kp N9   &kp N0         &kp BSPC
 &kp TAB     &kp Q         &kp W     &kp E   &kp R      &kp T        &kp Y          &kp U   &kp I      &kp O    &kp P          &kp EQUAL
@@ -30,13 +23,6 @@
         };
 
         Symbols {
-            // -----------------------------------------------------------------------------------------
-            // |       | F1   |  F2  |  F3  |  F4 |  F5 |   |  F6 |  F7 |  F8  | F9   | F10  |      |
-            // |       |      |      |      |  UP |     |   |     |     | LBKT | RBKT |      |      |
-            // |       |      |      | LFT  | DWN | RGT |   |     |  -  | LBRC | RBRC |      |      |
-            // |       |      |      |      |     |     |   |     |     |      |      |      |      |
-            // | BTCLR | BT0  | BT1  | BT2  | BT3 | BT4 |   |     |     |      |      |      |      |
-
             bindings = <
 &bt BT_CLR    &kp F1                &kp F2                 &kp F3            &kp F4             &kp F5    &kp F6  &kp F7    &kp F8    &kp F9     &kp F10    &trans
 &bt BT_SEL 0  &trans                &trans                 &trans            &trans             &trans    &trans  &trans    &kp LBKT  &kp RBKT   &trans     &trans

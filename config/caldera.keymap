@@ -18,27 +18,27 @@
 &kp TAB     &kp Q   &kp W     &kp E         &kp R            &kp T          &kp Y      &kp U   &kp I      &kp O    &kp P          &kp EQUAL
 &kp GRAVE   &kp A   &kp S     &kp D         &kp F            &kp G          &kp H      &kp J   &kp K      &kp L    &kp SEMI       &kp SQT
 &kp LSHFT   &kp Z   &kp X     &kp C         &kp V            &kp B          &kp N      &kp M   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
-&kp LCTRL   &trans  &kp LALT  &kp LEFT_GUI  &lt 2 BACKSPACE  &lt 1 ENTER    &kp SPACE  &mo 1   &to 1      &to 2    &kp BACKSLASH  &kp DELETE
+&kp LCTRL   &none  &kp LALT  &kp LEFT_GUI  &lt 2 BACKSPACE  &lt 1 ENTER    &kp SPACE  &mo 1   &to 1      &to 2    &kp BACKSLASH  &kp DELETE
             >;
         };
 
         Symbols {
             bindings = <
-&bt BT_CLR    &kp F1                &kp F2                 &kp F3            &kp F4             &kp F5    &kp F6  &kp F7    &kp F8    &kp F9     &kp F10    &trans
-&bt BT_SEL 0  &trans                &trans                 &trans            &trans             &trans    &trans  &trans    &kp LBKT  &kp RBKT   &trans     &trans
-&bt BT_SEL 1  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans  &kp LBRC  &kp RBRC  &kp UNDER  &kp MINUS  &trans
-&bt BT_SEL 2  &trans                &trans                 &trans            &trans             &trans    &trans  &trans    &trans    &trans     &trans     &trans
-&bt BT_SEL 3  &trans                &trans                 &to 2             &to 0              &trans    &trans  &trans    &to 2     &trans     &trans     &bt BT_CLR_ALL
+&bt BT_CLR    &kp F1                &kp F2                 &kp F3            &kp F4             &kp F5    &kp F6  &kp F7    &kp F8    &kp F9     &kp F10    &kp F12
+&bt BT_SEL 0  &none                &none                 &none            &none             &none    &none  &none    &kp LBKT  &kp RBKT   &none     &none
+&bt BT_SEL 1  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none    &none  &kp LBRC  &kp RBRC  &kp UNDER  &kp MINUS  &none
+&bt BT_SEL 2  &none                &none                 &none            &none             &none    &none  &none    &none    &none     &none     &none
+&bt BT_SEL 3  &none                &none                 &to 2             &to 0              &none    &none  &none    &to 2     &none     &none     &bt BT_CLR_ALL
             >;
         };
 
         Nav {
             bindings = <
-&trans  &kp F1  &kp F2    &kp F3    &kp F4     &kp F5          &kp F6    &kp F7       &kp F8         &kp F9           &kp F10     &trans
-&trans  &trans  &trans    &kp UP    &trans     &trans          &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END          &kp INSERT  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans          &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT_ARROW  &trans      &trans
-&trans  &trans  &trans    &trans    &trans     &trans          &trans    &trans       &trans         &trans           &trans      &trans
-&trans  &trans  &trans    &to 1     &to 0      &bt BT_SEL 4    &trans    &trans       &to 1          &trans           &trans      &trans
+&none  &kp F1  &kp F2    &kp F3    &kp F4     &kp F5          &kp F6    &kp F7       &kp F8         &kp F9           &kp F10     &none
+&none  &none  &none    &kp UP    &none     &none          &kp HOME  &kp PAGE_UP  &kp PAGE_DOWN  &kp END          &kp INSERT  &none
+&none  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none          &kp LEFT  &kp DOWN     &kp UP         &kp RIGHT_ARROW  &none      &none
+&none  &none  &none    &none    &none     &none          &none    &none       &none         &none           &none      &none
+&none  &none  &none    &to 1     &to 0      &bt BT_SEL 4    &none    &none       &to 1          &none           &none      &none
             >;
         };
     };
